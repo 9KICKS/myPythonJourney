@@ -34,5 +34,5 @@ delete_file3.unlink(missing_ok=True)
 delete_folder1 = my_folder / "images/"
 delete_folder1.rmdir()
 
-delete_folder2 = pathlib.Path(pathlib.Path.cwd()/"my_folder")
+delete_folder2 = pathlib.Path.cwd() / "my_folder/"
 delete_folder2.rmdir()
