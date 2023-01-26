@@ -13,7 +13,6 @@ def validator(card_number):
 
 
 credit_card = str(input("Hello, kindly enter card details to verify: "))
-card_type = ""
 print()
 print("Verifying ")
 time.sleep(2.0)
@@ -25,17 +24,21 @@ print(">>>>>>>>>>")
 print("Verification Complete!")
 print()
 
-if credit_card[0] == "4":
-    card_type = "Visa Card"
-elif credit_card[0] == "5":
-    card_type = "Mastercard"
-elif credit_card[0] == "3":
-    card_type = "American Express Card"
-elif credit_card[0] == "6":
-    card_type = "Discover Card"
-else:
-    "Invalid card type"
 
+def credit_card_type():
+    if credit_card[0] == "4":
+        return "Visa Card"
+    elif credit_card[0] == "5":
+        return "Mastercard"
+    elif credit_card[0] == "3":
+        return "American Express Card"
+    elif credit_card[0] == "6":
+        return "Discover Card"
+    else:
+        return "Invalid card type"
+
+
+card_type = str(credit_card_type())
 card_length = str(len(credit_card))
 
 print("*****************************************************")
