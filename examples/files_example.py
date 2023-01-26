@@ -22,5 +22,3 @@ print(cwd_path)
 #print("isDir - ", cwd_path.is_file())
 #print("isDir - ", cwd_path.is_dir())
 
-cwd_path.parent.mkdir()
-
