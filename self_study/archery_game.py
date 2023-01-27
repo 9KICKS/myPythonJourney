@@ -6,7 +6,7 @@ def generate_score():
 
 
 def print_scores(scores):
-    print("Player\tChance 1\tChance 2\tChance 3       Total")
+    print("Player\t Chance 1\t Chance 2\t Chance 3      Total")
     for i in range(4):
         print(f"{i + 1}\t\t\t{scores[i][0]}\t\t\t{scores[i][1]}\t\t\t{scores[i][2]}\t\t\t{sum(scores[i])}")
 
