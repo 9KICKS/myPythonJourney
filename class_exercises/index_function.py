@@ -15,4 +15,4 @@ def get_index(x, y, z):
 x = 3
 y = 12
 z = 1
-print(get_index(x, y, z))
+print("Result = ", get_index(x, y, z))
